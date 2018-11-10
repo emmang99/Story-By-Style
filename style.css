@@ -1,0 +1,163 @@
+/*This will style the whole body of html*/
+body {
+  height: 100vh;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Philosopher', sans-serif;
+  line-height: 30px;
+}
+
+/*This will style the two main sections*/
+section {
+  display: inline-block;
+  margin:auto;
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+/*This will style all of h3 in the whole file*/
+h1 {
+  color: #962622;
+  font-size: 30px;
+  font-family: 'Futura', sans-serif;
+}
+
+/*This will style all of the p tags that have class "size1"*/
+p.largest {
+  color: #962622;
+  font-size: 60px;
+  letter-spacing: 10px;
+  font-family: 'Futura', sans-serif;
+  border-style: double;
+  padding: 30px;
+}
+
+/*This will style all of the p tags that have class "size2"*/
+p.medium_large {
+  font-size: 45px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing:3px;
+  text-decoration: underline;
+  padding: 20px;
+}
+
+/*This will style all of the p tags that have class "size3"*/
+p.medium {
+  font-size: 25px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing:2px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/*This will style all of the p tags that have class "size4"*/
+p.smallest {
+  font-family:'Futura', sans-serif;
+  font-size:20px;
+  letter-spacing:5px;
+  font-style: italic;
+  color: #DBDBDB;
+  padding: 5px;
+}
+
+/*This selects the p adjacent to h3*/
+h1 + p{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+/*STYLING FOR 'THE HANDMAID'S TALE' QUOTE*/
+
+/*This will style only the section with the class .quote1*/
+.quote1 {
+  color: white;
+  background-color: black;
+  float: left;
+  padding: 20px;
+}
+
+/*This will style the div with the class .title1*/
+.title1 {
+  margin: 10px;
+  text-align: left;
+  padding-top: 100px;
+}
+/*This will move the image #handmaid to the middle and bottom of the page*/
+#handmaid {
+  float: right;
+  height: 250px;
+}
+
+/*This picks out all of the word "not" in the whole file and styles them*/
+[word ~= not] {
+  color: darkred;
+  font-family:'Playfair Display',serif;
+  font-weight: bold;
+}
+
+/*This will style only the word that is assigned to id #a, which is "white"*/
+#a {
+  background-color:white;
+  color: black;
+  font-family:'Futura', sans-serif;
+  border-style: dashed;
+}
+
+/*This will style only the word that is assigned to id #b, which is "gaps"*/
+#b {
+  font-family:'Futura', sans-serif;
+  font-size:28px;
+  color:#962622;
+  letter-spacing:15px;
+}
+
+/*STYLING FOR 'AMERICAN PSYCHO' QUOTE*/
+
+/*This will style only the section with the class .quote2*/
+.quote2 {
+  background-color: #D4362F;
+  color: #520000;
+  float: right;
+}
+
+/*This will style the div with the class .title2*/
+.title2 {
+  margin-top: 30px;
+  padding-bottom: 50px;
+  top: 0;
+  text-align: right;
+  line-height: 10px;
+}
+/*This will move the image #psycho to the middle and top of the page, also flip it upside down*/
+#psycho {
+  float: left;
+  transform: scaleY(-1);
+  height: 250px;
+}
+
+/*This will add more styling only to the h3 in the .title2*/
+.title2 > h1 {
+  color: #DBDBDB;
+}
+
+/*This will add more styling only to the p.size2 in the section .quote2*/
+.quote2 > p.medium_large {
+  background-color: white;
+  border-radius: 20px;
+  text-decoration: none !important;
+}
+
+/*This will add more styling only to the p.size3 in the section .quote2*/
+.quote2 > p.medium {
+  color: #520000;
+  font-weight: bold;
+}
+
+/*This will style only the part that is assigned to id #c, which is "I simply am not there."*/
+#c {
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+}
